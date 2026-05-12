@@ -211,5 +211,48 @@
   </a>
 
   <script src="app.js"></script>
+
+  <!-- Language Selector Button -->
+  <div class="lang-selector-container" id="langSelectorContainer">
+    <button class="lang-btn" id="langBtn" onclick="toggleLangMenu()" title="Select Language">
+      <span class="lang-globe">🌐</span>
+      <span id="currentLang">EN</span>
+      <span class="lang-arrow">▲</span>
+    </button>
+    <div class="lang-menu" id="langMenu">
+      <div class="lang-menu-title">Select Language</div>
+      <button class="lang-option active" onclick="setLanguage('en')" data-lang="en">
+        <span class="lang-flag">🇬🇧</span> English
+      </button>
+      <button class="lang-option" onclick="setLanguage('th')" data-lang="th">
+        <span class="lang-flag">🇹🇭</span> ภาษาไทย
+      </button>
+      <button class="lang-option" onclick="setLanguage('zh')" data-lang="zh">
+        <span class="lang-flag">🇨🇳</span> 中文
+      </button>
+      <button class="lang-option" onclick="setLanguage('ja')" data-lang="ja">
+        <span class="lang-flag">🇯🇵</span> 日本語
+      </button>
+      <button class="lang-option" onclick="setLanguage('ko')" data-lang="ko">
+        <span class="lang-flag">🇰🇷</span> 한국어
+      </button>
+      <button class="lang-option" onclick="setLanguage('de')" data-lang="de">
+        <span class="lang-flag">🇩🇪</span> Deutsch
+      </button>
+      <button class="lang-option" onclick="setLanguage('fr')" data-lang="fr">
+        <span class="lang-flag">🇫🇷</span> Français
+      </button>
+      <button class="lang-option" onclick="setLanguage('es')" data-lang="es">
+        <span class="lang-flag">🇪🇸</span> Español
+      </button>
+      <button class="lang-option" onclick="setLanguage('ru')" data-lang="ru">
+        <span class="lang-flag">🇷🇺</span> Русский
+      </button>
+      <button class="lang-option" onclick="setLanguage('ar')" data-lang="ar">
+        <span class="lang-flag">🇸🇦</span> العربية
+      </button>
+    </div>
+  </div>
+
 </body>
 </html>
