@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samui Seed Bank - One Stop Shop for Seeds in Thailand</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="top-nav">
+      <button class="menu-toggle" id="menuToggle">&#9776;</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#seeds">Seeds</a>
+        <a href="#nutrients">Nutrients</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="header-center">
+      <a href="#" class="logo-link">
+        <div class="logo-text">SAMUI<br>SEED<br>BANK</div>
+      </a>
+    </div>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/samuiseedbank/" target="_blank" class="social-link">f</a>
+      <a href="https://x.com/samuiseedbank" target="_blank" class="social-link">X</a>
+      <a href="https://www.youtube.com/@SAMUISEEDBANK" target="_blank" class="social-link">▶</a>
+      <a href="https://line.me/ti/p/oIyscZc5nz" target="_blank" class="social-link">L</a>
+      <a href="https://wa.link/taxms9" target="_blank" class="social-link">W</a>
+      <a href="https://www.tiktok.com/@samuiseedbank" target="_blank" class="social-link">T</a>
+      <a href="#cart" class="cart-icon">🛒 <span id="cartCount">0</span></a>
+    </div>
+
+    <div class="category-bar">
+      <a href="#nutrients" class="cat-link">
+        <img src="https://www.samuiseedbank.com/wp-content/uploads/2023/01/mills-icon.png" alt="Mills" onerror="this.style.display='none'">
+        Mills Nutrients
+      </a>
+      <a href="#grow-medium" class="cat-link">
+        <img src="https://www.samuiseedbank.com/wp-content/uploads/2023/01/quikgro-icon.png" alt="QuikGro" onerror="this.style.display='none'">
+        Grow Medium
+      </a>
+      <a href="#organic" class="cat-link">
+        <img src="https://www.samuiseedbank.com/wp-content/uploads/2023/01/soma-icon.png" alt="Soma" onerror="this.style.display='none'">
+        Soma's Gardening Nutrients
+      </a>
+      <a href="#merch" class="cat-link">
+        <img src="https://www.samuiseedbank.com/wp-content/uploads/2023/01/ssb-icon.png" alt="SSB" onerror="this.style.display='none'">
+        Merch store
+      </a>
+      <span class="free-shipping">🚚 Free Shipping in Thailand</span>
+    </div>
+  </header>
+
+  <!-- Hero Carousel -->
+  <section class="hero-carousel" id="heroCarousel">
+    <div class="carousel-inner" id="carouselInner">
+      <div class="carousel-slide active" style="background: linear-gradient(135deg, #1a0a00, #4a1500);">
+        <div class="slide-content">
+          <h2>EXCLUSIVE OFFICIAL<br><span class="highlight">THAI LANDRACE</span><br>HANG KA ROCK</h2>
+          <a href="#seeds" class="btn-shop">SHOP NOW</a>
+        </div>
+      </div>
+      <div class="carousel-slide" style="background: linear-gradient(135deg, #0a1500, #1a4500);">
+        <div class="slide-content">
+          <h2>PREMIUM<br><span class="highlight">FEMINIZED SEEDS</span><br>FROM THAILAND</h2>
+          <a href="#seeds" class="btn-shop">EXPLORE</a>
+        </div>
+      </div>
+      <div class="carousel-slide" style="background: linear-gradient(135deg, #00051a, #001545);">
+        <div class="slide-content">
+          <h2>WORLD CLASS<br><span class="highlight">GENETICS</span><br>DELIVERED</h2>
+          <a href="#seeds" class="btn-shop">DISCOVER</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
+    <button class="carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
+  </section>
+
+  <!-- Brand Carousel -->
+  <section class="brand-carousel">
+    <div class="brands-track" id="brandsTrack">
+      <a href="#conscious-genetics" class="brand-item">
+        <div class="brand-logo conscious">CONSCIOUS<br>GENETICS</div>
+      </a>
+      <a href="#perfect-tree" class="brand-item">
+        <div class="brand-logo perfect">PERFECT<br>TREE</div>
+      </a>
+      <a href="#grounded" class="brand-item">
+        <div class="brand-logo grounded">GROUNDED<br>GENETICS</div>
+      </a>
+      <a href="#soma" class="brand-item">
+        <div class="brand-logo soma">SOMA'S<br>SACRED SEEDS</div>
+      </a>
+      <a href="#mills" class="brand-item">
+        <div class="brand-logo mills">MILLS<br>NUTRIENTS</div>
+      </a>
+      <a href="#th-seeds" class="brand-item">
+        <div class="brand-logo th">T.H.<br>SEEDS</div>
+      </a>
+      <a href="#serious" class="brand-item">
+        <div class="brand-logo serious">SERIOUS<br>SEEDS</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main id="content">
+    <!-- Our Medical Seeds Section -->
+    <section class="products-section" id="seeds">
+      <h2 class="section-title"><span>Our Medical</span> Seeds</h2>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" onclick="filterProducts('all')">All Seeds</button>
+        <button class="filter-btn" onclick="filterProducts('feminized')">Feminized</button>
+        <button class="filter-btn" onclick="filterProducts('regular')">Regular</button>
+        <button class="filter-btn" onclick="filterProducts('conscious')">Conscious Genetics</button>
+        <button class="filter-btn" onclick="filterProducts('perfect-tree')">Perfect Tree</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <!-- Products injected by JS -->
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="about-image-section">
+          <div class="about-visual">
+            <div class="about-brands-scroll">
+              <div class="ab-brand">CONSCIOUS GENETICS</div>
+              <div class="ab-brand">PERFECT TREE</div>
+              <div class="ab-brand">SOMA'S SACRED</div>
+              <div class="ab-brand">GROUNDED</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2>Medical Seeds in Thailand</h2>
+          <h3>Seeds from around the world</h3>
+          <p>Samui Seed Bank collaborates with esteemed global breeders to curate exceptional strains for medical purposes.</p>
+          <p>Our meticulously selected genetics offer unparalleled medical qualities, rigorously tested for potency, purity and consistency.</p>
+          <p>These strains boast diverse terpene profiles, featuring unique flavor and aroma combinations, alongside proven medical quality for your medical symptoms, innovative breeding techniques that enhance their effects.</p>
+          <p>Our portfolio showcases therapeutic solutions, targeting various medical conditions, including uplifting, energetic sativa varieties, relaxing, calming indica, offering balanced, versatile hybrids blending global genetics.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Samui Seed Bank Info -->
+    <section class="info-section" id="samui-info">
+      <h2 class="section-title"><span>Samui Seed</span> Bank</h2>
+      <div class="info-content">
+        <h3>Your Gateway to Medical Excellence!</h3>
+        <p>Discover Samui Seed Bank: Your Gateway to Medical Excellence! Nestled in the heart of Chaweng on Koh Samui Island lies Samui Seed Bank, the proud home of the first and only true medical gene bank in Koh Samui.</p>
+        <p>Our team is a dedicated crew deeply entrenched in the realms of cultivation, education, and the ever-evolving network surrounding this remarkable plant.</p>
+        <p>Beyond merely offering seeds, we're passionate about cultivating a community of like-minded individuals. Whether you're a seasoned grower seeking to refine your craft or a curious newcomer eager to embark on your cannabis journey, we extend a warm invitation to join our vibrant community.</p>
+        <a href="#contact" class="btn-primary">Unlock a world of Alternative Medicine!</a>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section" id="contact">
+      <h2>Contact Us</h2>
+      <p>Your Gateway to Medical Excellence!</p>
+      <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+        <input type="email" placeholder="Enter your email" required class="email-input">
+        <button type="submit" class="btn-subscribe">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <a href="#" class="footer-logo">
+      <div class="footer-logo-text">SAMUI<br>SEED<br>BANK</div>
+    </a>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/samuiseedbank/" target="_blank">Facebook</a>
+      <a href="https://x.com/samuiseedbank" target="_blank">Twitter / X</a>
+      <a href="https://www.youtube.com/@SAMUISEEDBANK" target="_blank">YouTube</a>
+      <a href="https://wa.link/taxms9" target="_blank">WhatsApp</a>
+      <a href="https://www.tiktok.com/@samuiseedbank" target="_blank">TikTok</a>
+    </div>
+    <p class="footer-copy">&copy; Copyright 2025 &ndash; All Right Reserved &mdash; Samui Seed Bank</p>
+  </footer>
+
+  <!-- Cart Modal -->
+  <div class="cart-modal" id="cartModal" style="display:none">
+    <div class="cart-content">
+      <button class="close-cart" onclick="toggleCart()">X</button>
+      <h2>Your Cart</h2>
+      <div id="cartItems"></div>
+      <div class="cart-total">Total: <span id="cartTotal">0 ฿</span></div>
+      <button class="btn-checkout">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- WhatsApp Chat Button -->
+  <a href="https://api.whatsapp.com/send?phone=66615274436&text=Hello! I'm interested in your awesome seeds" 
+     class="whatsapp-btn" target="_blank">
+    💬 Chat with us
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>
